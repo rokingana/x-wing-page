@@ -1,0 +1,270 @@
+ 
+:root {
+  --main-yellow: rgb(254,225,35,1);
+  --main-yellow-transp: rgb(254,225,35,0.8);
+  --main-blue: rgb(32,22,82, 1);
+  --main-blue-transp: rgb(32,22,82, 0.8);
+  --main-red: rgb(206,16,44,1);
+  --main-green: rgb(60,191,175,1);
+  --main-beije: rgb(243,220,179,1);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	color: var(--main-blue);
+}
+
+a {
+	text-decoration: none;
+	color: var(--main-yellow);
+}
+
+a:hover {
+	background-color: var(--main-yellow);
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+	position: fixed;;
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100vw;
+}
+
+.wrapper {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+#header {
+	background: url("../img/header-Xwing.jpg") no-repeat fixed center;
+	color: var(--main-yellow);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	background-size: cover;	
+	padding: 15% 0;
+	text-align: center;
+}
+
+a.download-btn {
+	background-color: var(--main-yellow);
+	padding: 20px 40px;
+	color: var(--main-blue);
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 2px;
+	font-weight: 800;
+	font-size: 0.8rem;
+	letter-spacing: 0.5rem;
+}
+
+
+a.download-btn:hover {
+	background-color: var(--main-yellow-transp);
+	transition: background-color 0.5s;
+}
+
+
+.nav-bar a {
+	border-bottom: none;
+	transition: border-bottom 0.5px;
+}
+
+
+.navbar a:hover {
+	background-color: rgb(255, 255, 255, 0);
+	color: var(--main-yellow);
+	border-bottom: 2px solid var(--main-yellow);
+}
+
+.logo {
+	margin-bottom: 20px;
+}
+
+.logo h1 {
+	font-family: 'STARWARS', sans-serif;
+	text-transform: uppercase;
+	font-size: 20vw;
+	line-height: 10rem;
+}
+
+.logo h2 {
+	font-family: 'STARWARS', sans-serif;
+	text-transform: uppercase;
+	font-size: 5vw;
+}
+
+#team {
+	padding: 150px 0;
+}
+
+#team h2 {
+	font-size: 3rem;
+	text-align: center;
+	margin: 30px 0;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.card {
+	border: none;
+}
+
+/* Profile Images */
+.profile-img {
+	position: relative;
+}
+
+.profile-img img{
+	max-width: 80%;
+	border-radius: 50%;
+}
+.profile-img .pink {
+	position: absolute;
+	opacity: 1;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+.profile-img .pink:hover{
+	opacity: 0;
+}
+
+
+.card-title {
+	font-weight: 400;
+}
+
+.card-subtitle {
+	font-weight: 300;
+}
+
+.card-text {
+	margin-top: 10px;
+}
+
+
+a.fab {
+	background-color: var(--main-blue);
+	padding: 8px;
+	font-size: 14px;
+	border-radius: 50%;
+	width: 30px;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+a.fab:hover {
+	background-color: #fff;
+	color: var(--main-blue);
+	transition: background-color 0.5s;
+}
+
+.social-menu {
+	list-style: none;
+	margin-top: 1rem;
+}
+
+.menu-container .social-menu {
+	float: left;
+}
+
+.social-menu li a {
+	width: 30px;
+	height: 30px;
+}
+
+.social-menu li:nth-last-child(1) {
+	padding-right: 0px;
+}
+
+
+.social-menu li {
+	display: inline-block;
+	padding-right: 11px;
+}
+
+
+/**** TESTEMONIAL ****/
+
+
+.carousel-caption {
+	color: var(--main-blue);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.carousel-caption p {
+	font-size: 5vw;
+	line-height: 5vw;
+	font-weight: 300;
+	font-style: italic;
+}
+
+
+.carousel-caption h5 {
+	font-size: 3vw;
+}
+
+
+
+.quote-right {
+	text-align: end;
+}
+
+.quote-left {
+	text-align: start;	
+}
+
+#video .container-fluid {
+	padding: 0;
+	position: relative;
+}
+
+#myVideo {
+	width: 100%;
+	
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
